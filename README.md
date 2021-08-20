@@ -1,2 +1,2 @@
 # Travel-Website
-This is a Website about my hometown, Voorheesville.
+This is a website about my hometown, Voorheesville.
