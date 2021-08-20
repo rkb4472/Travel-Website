@@ -1,0 +1,934 @@
+/* Renee Bogdany
+   Individual Project Part 2
+   Styles
+   5/7/2021 */
+
+/* DESKTOP STYLES */
+
+body {
+    margin: 0;
+}
+
+/* font and text styles */
+p, a {
+    line-height: 1.6em;
+}
+nav a, h1, h2, h3, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p, li, label {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* background */
+body {
+    background-color: rgb(245, 237, 248);
+}
+
+/* navigation */
+.nav2, .lowernav ul, header, hr {
+    padding: 0;
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 18px;
+}
+nav a {
+    text-decoration: none;
+}
+
+.topnav, .buttonnav {
+    background-color: rgb(71, 69, 71);
+}
+.lowernav2 {
+    display: none;
+}
+.topnav ul {
+    width: 600px;
+}
+
+.lowernav, .lowernav2, header, .newnav {
+    background-color: rgb(218, 167, 218);
+}
+.lowernav ul, .lowernav2 ul {
+    padding: 1em;
+}
+
+/* new navigation */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+nav a {
+    color: green;
+    text-decoration: none;
+}
+nav li li a {
+    display: block;
+    color: #060;
+    padding: 0.2em 10px;
+}
+nav li {
+    float: left;
+    width: 10em;
+    text-align: center;
+    cursor: default;
+}
+nav li li {
+    display: block;
+    float: none;
+}
+nav li ul{
+    display: none; 
+    position: absolute;
+    padding: 0.5em 0 1em 0;
+    border: solid 1px black;
+}
+nav li:hover ul{
+    display: block;
+    background-color: rgb(218, 167, 218);
+}
+nav li li a:hover {
+    padding: 0.2em 5px;
+    border: 5px solid black;
+    border-width: 0 5px;
+    cursor:pointer;
+}
+
+/* hamburger menu */
+
+.nav {
+    display: none;
+}
+.lines {
+    display: none;
+    width: 40px;
+    padding: 5px 10px;
+    background-color:black;
+}
+.lines div {
+    height: 3px !important;
+         background: white;
+         margin: 7px 0px 7px 0px;
+         border-radius: 25px;
+}
+.line2 { 
+    width: 40px; 
+}
+.line3 { 
+    width: 40px; 
+}
+#navBtn input {
+    display: none;
+}
+.top {
+    background-color: #F3F1F1;
+    display:none;
+}
+.top .lines {
+    width: 50px;
+}
+.top .line2 {
+  width: 50px;
+}
+.top .line3 {
+    width: 50px;
+}
+
+/* header/heading styles */
+
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.25em;
+}
+h4 {
+    font-size: 1.1em;
+    clear: both;
+}
+header {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer styles */
+
+#bottomtext {
+    text-align: center;
+    background-color: rgb(218, 167, 218);
+}
+#bottom2 {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+/* link styles */
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: rgb(160, 17, 17);
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color:blue;
+}
+
+.topnav a:link {
+    color: white;
+}
+
+.topnav a:visited {
+    color: lightgray;
+}
+
+.topnav a:hover {
+    color: red;
+}
+
+.topnav a:active {
+    color:blue;
+}
+
+.noLink a:link, .noLink a:visited, .noLink a:hover, .noLink a:active {
+    color: black;
+    cursor: context-menu;
+}
+
+
+/* HOMEPAGE STYLES */
+
+.intro {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* map styles */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.home {
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(184, 202, 236);;
+}
+.home h3 {
+    text-align: left;
+}
+.backtotop {
+    text-align: center;
+    clear: both;
+}
+/* main image on home page */
+.photo1 {
+    width: 100%;
+}
+
+/* EDUCATION PAGE STYLES */
+
+.edsetup {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: "elem mshs";
+}
+.elem {
+    grid-area: elem;
+}
+.mshs {
+    grid-area: mshs;
+}
+
+/* mshs styles */
+.sportsclubs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* RESTAURANTS PAGE STYLES */
+
+.restaurants {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: "brickhouse chinagarden"
+                         "emma gracies";
+}
+.chinagarden {
+    grid-area: chinagarden;
+}
+.emma {
+    grid-area: emma;
+}
+.brickhouse {
+    grid-area: brickhouse;
+}
+.gracies {
+    grid-area: gracies;
+}
+
+
+/* RELIGION PAGE STYLES */
+
+/* main part */
+.churchpage {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* mass schedule */
+.mass {
+    display: flex;
+    flex-wrap: wrap;
+    width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.masstime {
+    border: 2px solid black;
+    width: 125px;
+    padding: 1em;
+}
+
+/* programs part */
+.fp {
+    padding-top: 1em;
+}
+/* organization part */
+.groups {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.group {
+    width: 210px;
+    border: 2px solid black;
+    background-color: rgb(184, 202, 236);
+    padding: .5em;
+    border-radius: 5%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.organizations {
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+/* church photo */
+.churchphoto {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* other photos */
+.ffphoto {
+    float: left;
+    padding-right: 1em;
+}
+.familyphoto {
+    float: right;
+    padding-left: 1em;
+}
+
+/* PARKS / FIELDS STYLES */
+
+.swiftroad, .nichols {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px black;
+    padding: 1em;
+    border-radius: 2%;
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.thacher {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiftroad li, .nichols li {
+    float: left;
+    margin: 1em;
+    margin-bottom: .5em;
+    margin-top: .225em;
+}
+.swiftroad h3, .nichols h3 {
+    margin-top: .01em;
+}
+.srphoto, .trailmap {
+    float: left;
+    padding-right: 1em;
+}
+#bigImg {
+    margin-right: auto;
+    margin-left: auto;
+    width: 390px;
+}
+#smallImgs {
+    margin-right: auto;
+    margin-left: auto;
+    width: 412px;
+}
+.smallpark {
+    font-size: 1.4em;
+    margin-top: 2em;
+}
+.tphotos {
+    padding-top: 1em;
+    clear: both;
+}
+
+/* SHOPPING PAGE STYLES */
+
+.malls {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.malls p {
+    clear: both;
+    padding-top: 1em;
+}
+.malls ul li {
+    float: left;
+    margin: 1em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+.line {
+    clear: both;
+    margin-top: 7em;
+    margin-bottom: 1em;
+}
+
+/* SURVEY PAGE STYLES */
+
+/* group size styles */
+.groupdiv {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.group2 {
+    padding-right: 1em;
+}
+input[type=number] {
+    width: 30px;
+    padding-left: .5em;
+    border: 1px solid blue;
+}
+
+/* time of visit styles */
+.visit {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+input[type=date] {
+    padding-left: 1em;
+    margin-left: 1em;
+    border: 1px solid blue;
+}
+.captcha {
+    text-align: center;
+}
+
+/* favorite place to eat styles */
+.favplace {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(184, 202, 236);
+}
+input[type=radio]  {
+    margin: .5em;
+}
+fieldset {
+    border: 2px solid black;
+}
+
+/* overall rating styles */
+input[type=range] {
+    background: black;
+}
+.ratebar {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text2 {
+    text-align: center;
+}
+
+/* submit button styles */
+.submitbutton {
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;   
+    padding-top: 1em; 
+    padding-bottom: 2em;
+}
+input[type="submit"] {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: rgb(218, 167, 218);
+    color: black;
+    border: 2px solid black;
+}
+
+/* HISTORY PAGE STYLES */
+
+.history {
+    border: 2px solid black;
+    padding: .5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+.smittysphoto, .millphoto {
+    float: left;
+}
+.motts {
+    clear: both;
+}
+.historypage {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section1 {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    grid-template-areas: "sub1 sub2";
+    grid-gap: .5em;
+}
+.sub1 {
+    grid-area: sub1;
+}
+.sub2 {
+    grid-area: sub2;
+}
+.arrowdown {
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* OTHER PAGE STYLES */
+
+.other {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ilfphoto, .railtrailphoto, .vvillecenterphoto, .fmphoto, .osphoto {
+    float: left;
+    padding-right: 1em;
+}
+.clear {
+    clear: both;
+    padding-top: 2em;
+}
+
+/* REFERENCES STYLES */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1.5em;
+    width: 100%;
+}
+
+/* COMMENTS FORM PAGE STYLES */
+
+.form {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#list {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.commentTitle, .login {
+    font-size: 18px;
+}
+.red {
+    color: red;
+}
+
+/* LOGIN/REGISTER PAGE STYLES */
+
+.form2 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.usname {
+    padding: 1em;
+}
+.password {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.25em;
+}
+.reset, .enter, .register, .reset2, .enter2 {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: rgb(218, 167, 218);
+    color: black;
+    border: 2px solid black;
+    margin-left: 1.2em;
+}
+.reset2, .enter2 {
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+}
+.register {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    background-color: purple;
+    color: white;
+}
+
+/* GRADING PAGE STYLES */
+.grade h3 {
+    text-align: left;
+}
+.grade {
+    width: 90%;
+    padding: 1em;
+}
+.center {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIUM SIZE SCREENS */
+@media screen and (max-width: 1200px) {
+    .edsetup {
+        display: block;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .restaurants {
+        display: block;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 830px) {
+    .mass {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .churchpage {
+        width: 90%;
+        padding: 1em;
+        padding-top: .5em;
+        padding-bottom: 0em;
+    }
+    .group {
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .churchphoto {
+        width: 100%;
+    }
+    .groups {
+        display: block;
+        width: 100%;
+    }
+    .other {
+        width: 400px;
+    }
+    .ilfphoto, .railtrailphoto, .vvillecenterphoto, .fmphoto, .osphoto {
+        float: none;
+        padding-right: 0em;
+    }
+    .historypage {
+        width: 90%;
+        padding: 1em;
+        padding-top: 0em;
+    }
+    .smittysphoto, .millphoto {
+        float: none;
+        display: inline-block;
+    }
+    .section1 {
+        clear: both;
+        display: block;
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiftroad, .nichols {
+        width: 60%;
+    }
+    .thacher {
+        width: 90%;
+        padding: 1em;
+        padding-top: 0em;
+        padding-bottom: .5em;
+    }
+    .srphoto {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0em;
+    }
+    .parkclear {
+        clear: both;
+    }
+    .malls {
+        width: 90%;
+        padding: 1em;
+        padding-top: 0em;
+        padding-bottom: 5em;
+    }
+    .crossgates, .colonie {
+        width: 100%;
+    }
+    .home {
+        width: 300px;
+    }
+    .intro {
+        width: 330px;
+    }
+    .map {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .lowernav {
+        display: none;
+    }
+    .lowernav2 {
+        display: inline-block;
+        width: 100%;
+    }
+    .lowernav2 ul li {
+        width: 75px;
+    }
+}
+
+/* SMALLER SCREEN SIZES */
+@media screen and (max-width: 660px) {
+    /* changes in navigation */
+    .top {
+        display: block;
+    }
+    .lines {
+        display: block;
+        position: absolute;
+    }
+    nav li {
+        float: none;
+        text-align: left;
+        margin-top: 1em;
+    }
+    .top2 {
+        margin-top: 3.5em;
+    }
+    .bot {
+        margin-bottom: 7em;
+    }
+    .top3 {
+        margin-top: 4em;
+    }
+    .newnav, .topnav {
+        display: none;
+    }
+    .nav {
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        /* transform: translateX(-100%); */
+        display: none;
+        background-color: rgb(218, 167, 218);
+    }
+    .nav:target {
+        /* transform: translateX(0);
+        transition: transform .5s ease; */
+        display: block;
+    }
+    nav li:hover ul{
+        display: inline;
+        background-color: rgb(218, 167, 218);
+    }
+    .dropdown-container, .dropdown-container2, .dropdown-container3, .dropdown-container4 {
+        display: none;
+        padding-left: 8px;
+        margin-left: 2em;
+        width: 100%;
+    }
+    .dropdown-btn, .dropdown-btn2, .dropdown-btn3, .dropdown-btn4 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+        border: none;
+        background: none;
+        width:100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+      }
+    .navList {
+        margin-top: 2em;
+    }
+    .lowernav2 {
+        display: none;
+    }
+    .lowernav {
+        display: block;
+    }
+    nav ul, .lowernav ul{
+        display: block;
+    }
+    .nav2 {
+        display:block;
+        padding-left: 2.5em;
+    }
+    .nav2 a {
+        font-size: 20px;
+    }
+    .ref {
+        margin-bottom: 1.5em;
+    }
+    .topnav ul {
+        width: 50%;
+    }
+    /* get rid of logo */
+    .vlogo {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .edsetup {
+        display: block;
+        width: 90%;
+        padding: 1em;
+        padding-top: 0em;
+        padding-bottom: .5em;
+    }
+    .elemphoto, .mshsphoto {
+        width: 100%;
+    }
+    .restaurants {
+        display: block;
+        width: 90%;
+        padding: 1em;
+        padding-top: .5em;
+    }
+    .chinagardenphoto, .emmaphoto, .brickhousephoto, .graciesphoto {
+        width: 100%;
+    }
+    .mass {
+        width: 350px;
+    }
+    .group {
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #list {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .srphoto {
+        width: 100%;
+    }
+    .swiftroad, .nichols {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 455px) {
+    .section1, .smittysphoto, .millphoto {
+        width: 100%;
+    }
+    .familyphoto, .ffphoto {
+        float: none;
+        display: block;
+    }
+    .trailmap {
+        float: none;
+        display: block;
+    }
+}
+@media screen and (max-width: 430px) {
+    .other {
+        width: 90%;
+        padding: 1em;
+        padding-top: 0em;
+        padding-bottom: 0em;
+    }
+    .ilfphoto, .railtrailphoto, .vvillecenterphoto, .fmphoto, .osphoto {
+        width: 100%;
+    }
+    #bigImg, #smallImgs, #mainImg {
+        width: 100%;
+    }
+}
